@@ -60,15 +60,12 @@ const Navbar = () => {
         </Typography>
         {isNonMobileScreens && (
           <FlexBetween
-            backgroundColor={neutralLight}
-            borderRadius="9px"
-            gap="3rem"
-            padding="0.1rem 1.5rem"
+            
           >
-            <InputBase placeholder="Search..." />
+            {/* <InputBase placeholder="Search..." />
             <IconButton>
               <Search />
-            </IconButton>
+            </IconButton> */}
           </FlexBetween>
         )}
       </FlexBetween>
@@ -119,7 +116,7 @@ const Navbar = () => {
         </IconButton>
       )}
 
-      {/* MOBILE NAV */}
+     {/* // TODO:  MOBILE NAV */}
       {!isNonMobileScreens && isMobileMenuToggled && (
         <Box
           position="fixed"

@@ -28,7 +28,7 @@ const AdvertWidget = () => {
         <Typography color={medium}>mikacosmetics.com</Typography>
       </FlexBetween>
       <Typography color={medium} m="0.5rem 0">
-        Puedes promocionar tu negocio en esta sección pagando 30 pesos de comisión.
+        Puedes promocionar tu negocio en esta sección pagando 10 pesos de comisión.
       </Typography>
     </WidgetWrapper>
   );

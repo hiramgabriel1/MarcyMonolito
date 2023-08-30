@@ -1,5 +1,5 @@
 import express from "express";
-// import bodyParser from "body-parser";
+import bodyParser from "body-parser";
 import mongoose from "mongoose";
 import cors from "cors";
 import dotenv from "dotenv";
@@ -15,6 +15,7 @@ import { register } from "./controllers/auth.js";
 import { createPost } from "./controllers/posts.js";
 import { verifyToken } from "./middleware/auth.js";
 
+
 const app = express();
 
 /* CONFIGURATIONS */
@@ -26,9 +27,9 @@ dotenv.config();
 app.use(express.json());
 // app.use(helmet());
 // app.use(helmet.crossOriginResourcePolicy({ policy: "cross-origin" }));
-app.use(morgan("common"));  
-app.use(express.json({ limit: "600mb" }));
-app.use(express.urlencoded({ limit: "600mb", extended: true }));
+app.use(morgan("common"));
+app.use(bodyParser.json({ limit: "600mb", extended: true }));
+app.use(bodyParser.urlencoded({ limit: "600mb", extended: true }));
 app.use(cors());
 app.use("/assets", express.static(path.join(__dirname, "public/assets")));
 

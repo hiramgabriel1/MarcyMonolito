@@ -63,7 +63,7 @@ const PostWidget = ({
           height="auto"
           alt="post"
           style={{ borderRadius: "0.75rem", marginTop: "0.75rem" }}
-          src={`https://marcybackend.onrender.com/assets/${picturePath}`}
+          src={`https://marcybackend.onrender.com/public/assets/${picturePath}`}
         />
       )}
       <FlexBetween mt="0.25rem">
